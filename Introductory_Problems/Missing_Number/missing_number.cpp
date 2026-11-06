@@ -1,5 +1,9 @@
+// Since we are given n, the number of elements from 1-n
+// we can use the sum of first n natural numbers to find 
+// our expected sum, then subtract what we actually have
+// and the result is our answer. nice.
+
 #include <bits/stdc++.h>
-#include <string>
 
 using namespace std; 
 
@@ -17,6 +21,6 @@ using namespace std;
     sum += temp;
   }
 
-  cout << to_string(expected - sum);
+  cout << expected - sum << "\n";
   return 0;
  } 
